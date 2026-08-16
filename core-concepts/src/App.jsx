@@ -16,6 +16,7 @@ import { Greeting } from './Greeting' // prop concept
 import { CardWrapper } from "./CardWrapper" // children concept
 import { UserDetails } from "./UserDetails" // conditional Rendering
 import { ProductList } from "./ProductList" // 11 - Rendering Lists
+import { NameList } from "./NameList" //React 19 Tutorial - 13 - Index as Key Anti-Pattern
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
     <>
       <section id="center">
         
+        <NameList />
+
         <ProductList />
 
         <UserDetails 
