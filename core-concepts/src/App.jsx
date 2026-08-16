@@ -15,6 +15,7 @@ import { Greeting } from './Greeting' // prop concept
 // import { UserCard } from './UserCard' // rest concept
 import { CardWrapper } from "./CardWrapper" // children concept
 import { UserDetails } from "./UserDetails" // conditional Rendering
+import { ProductList } from "./ProductList" // 11 - Rendering Lists
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
     <>
       <section id="center">
         
+        <ProductList />
+
         <UserDetails 
           name="Bruce Wayne" 
           isOnline={true} 
