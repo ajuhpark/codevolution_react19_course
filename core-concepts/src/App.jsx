@@ -17,6 +17,9 @@ import { CardWrapper } from "./CardWrapper" // children concept
 import { UserDetails } from "./UserDetails" // conditional Rendering
 import { ProductList } from "./ProductList" // 11 - Rendering Lists
 import { NameList } from "./NameList" //React 19 Tutorial - 13 - Index as Key Anti-Pattern
+import { Alert } from "./Alert.jsx" //React 19 Tutorial - 14 - Styling React Components
+import { NewButton } from "./NewButton.jsx" //React 19 Tutorial - 14 - Styling React Components
+
 
 
 function App() {
@@ -26,6 +29,11 @@ function App() {
     <>
       <section id="center">
         
+        <Alert>Your changes have been saved.</Alert>
+        <Alert type="error">Something went wrong!</Alert>
+        <NewButton />
+        <NewButton />
+
         <NameList />
 
         <ProductList />
