@@ -18,7 +18,8 @@ import { UserDetails } from "./UserDetails" // conditional Rendering
 import { ProductList } from "./ProductList" // 11 - Rendering Lists
 import { NameList } from "./NameList" //React 19 Tutorial - 13 - Index as Key Anti-Pattern
 import { Alert } from "./Alert.jsx" //React 19 Tutorial - 14 - Styling React Components
-import { NewButton } from "./NewButton.jsx" //React 19 Tutorial - 14 - Styling React Components
+import { NewButton } from "./NewButton.jsx" // React 19 Tutorial - 14 - Styling React Components
+import { CustomButton } from "./CustomButton.jsx" // React 19 Tutorial - 15 - Event Handling
 
 
 
@@ -27,8 +28,11 @@ function App() {
 
   return (
     <>
-      <section id="center">
+      <section className= "examples_container" id="center">
         
+        <CustomButton text="Like"/>
+        <CustomButton text="Bookmark"/>
+
         <Alert>Your changes have been saved.</Alert>
         <Alert type="error">Something went wrong!</Alert>
         <NewButton />
