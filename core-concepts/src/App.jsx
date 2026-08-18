@@ -23,8 +23,8 @@ import { CustomButton } from "./CustomButton.jsx" // React 19 Tutorial - 15 - Ev
 import { Contact } from "./Contact"
 import { Newsletter } from "./Newsletter"
 import { Menu } from "./Menu"
-
-
+import { Counter } from "./Counter"
+import { LoginCard } from "./LoginCard"
 
 function App() {
   const [count, setCount] = useState(0) 
@@ -32,6 +32,9 @@ function App() {
   return (
     <>
       <section className= "examples_container" id="center">
+
+        <LoginCard />
+        <Counter />
 
         <Menu />        
         <Contact />
