@@ -20,6 +20,9 @@ import { NameList } from "./NameList" //React 19 Tutorial - 13 - Index as Key An
 import { Alert } from "./Alert.jsx" //React 19 Tutorial - 14 - Styling React Components
 import { NewButton } from "./NewButton.jsx" // React 19 Tutorial - 14 - Styling React Components
 import { CustomButton } from "./CustomButton.jsx" // React 19 Tutorial - 15 - Event Handling
+import { Contact } from "./Contact"
+import { Newsletter } from "./Newsletter"
+import { Menu } from "./Menu"
 
 
 
@@ -29,7 +32,11 @@ function App() {
   return (
     <>
       <section className= "examples_container" id="center">
-        
+
+        <Menu />        
+        <Contact />
+        <Newsletter />
+
         <CustomButton text="Like"/>
         <CustomButton text="Bookmark"/>
 
