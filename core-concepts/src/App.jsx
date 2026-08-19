@@ -25,6 +25,9 @@ import { Newsletter } from "./Newsletter"
 import { Menu } from "./Menu"
 import { Counter } from "./Counter"
 import { LoginCard } from "./LoginCard"
+import { UserDashboard } from "./UserDashboard"
+import { SimpleCounter } from "./SimpleCounter"
+
 
 function App() {
   const [count, setCount] = useState(0) 
@@ -32,7 +35,8 @@ function App() {
   return (
     <>
       <section className= "examples_container" id="center">
-
+        <SimpleCounter />
+        <UserDashboard isPremium={true} />
         <LoginCard />
         <Counter />
 
