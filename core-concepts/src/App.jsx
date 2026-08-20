@@ -27,6 +27,8 @@ import { Counter } from "./Counter"
 import { LoginCard } from "./LoginCard"
 import { UserDashboard } from "./UserDashboard"
 import { SimpleCounter } from "./SimpleCounter"
+import { PrevStateCounter } from "./PrevStateCounter"
+import { BatchingCounter } from "./BatchingCounter"
 
 
 function App() {
@@ -35,6 +37,9 @@ function App() {
   return (
     <>
       <section className= "examples_container" id="center">
+
+        <BatchingCounter />
+        <PrevStateCounter />
         <SimpleCounter />
         <UserDashboard isPremium={true} />
         <LoginCard />
