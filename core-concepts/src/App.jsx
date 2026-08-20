@@ -29,7 +29,7 @@ import { UserDashboard } from "./UserDashboard"
 import { SimpleCounter } from "./SimpleCounter"
 import { PrevStateCounter } from "./PrevStateCounter"
 import { BatchingCounter } from "./BatchingCounter"
-
+import { UserProfile_1 } from "./UserProfile_1" 
 
 function App() {
   const [count, setCount] = useState(0) 
@@ -38,6 +38,7 @@ function App() {
     <>
       <section className= "examples_container" id="center">
 
+        <UserProfile_1 />
         <BatchingCounter />
         <PrevStateCounter />
         <SimpleCounter />
